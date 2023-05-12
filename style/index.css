@@ -1,0 +1,73 @@
+body{
+    background-color: rgb(230, 230, 230);
+    background-image: url(../img/body.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'montserrat';
+}
+
+header nav{
+    background: rgb(32, 32, 32);
+    /*background: rgb(127,12,34);*/
+    /*background: linear-gradient(0deg, rgba(127,12,34,1) 0%, rgba(134,28,43,1) 35%, rgba(187,23,62,1) 100%);*/
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+body .box img{
+    width: 6vh;
+    height: 6vh;
+    float: right;
+}
+
+header nav .menu{
+    display: flex;
+    font-size: larger;
+    height: 6vh;
+    width: 12vh;
+    align-items: center;
+    justify-content: center;
+    border-bottom: rgb(32, 32, 32) 3px solid;
+}
+
+header nav .menu a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+header nav .menu:hover{
+    background: rgb(43, 43, 43);
+    /*background: linear-gradient(0deg, rgba(146,14,39,1) 0%, rgba(156,34,51,1) 35%, rgba(209,25,69,1) 100%);*/
+    border-bottom: whitesmoke 3px solid;
+}
+
+body .box{
+    margin: 5% 20% 5% 20%;
+    display: block;
+    background-color: rgba(31, 31, 31, 0.801);
+    padding: 0.5vh 2.5vh 0.5vh 2.5vh;
+    color: whitesmoke;
+    border-radius: 1vh;
+}
+
+body .box p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 95%;
+}
+
+body .box ul li{
+    margin-bottom: 0.5vh;
+}
+
+body .body2{
+    background-color: rgb(32, 32, 32);
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+}
