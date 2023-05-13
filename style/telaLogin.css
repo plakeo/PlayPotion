@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    background: rgb(39, 39, 39);
+    font-family: 'montserrat';
+    box-sizing: border-box;
+}
+
+body #first-line, #second-line, #third-line{
+    color: whitesmoke;
+    font-size: 5vh;
+    margin: 0.3vh 0vh;
+}
+
+body #first-line{
+    margin-right: 10vw;
+}
+
+body #second-line{
+    margin-left: 2.5vw;
+}
+
+body #third-line{
+    margin-left: 15vw;
+}
+
+body .main-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+body .left-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 50vw;
+}
+
+body .right-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 40vw;
+}
+
+body .main-login .box-login{
+    width: 60%;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5vh 2vh 4vh 2vh;
+    border-radius: 1vh;
+    color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+body .main-login .box-login .textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
+body .main-login .right-login .box-login input{
+    outline: none;
+    background-color: rgb(39, 39, 39);
+    border: none;
+    border-radius: 0.5vh;
+    padding: 0.8vh 1vh;
+    color: rgb(200, 200, 200);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+body .main-login .left-login img{
+    width: 60vh;
+    pointer-events: none;
+}
+
+body .main-login .right-login #enviar{
+    background-color: brown;
+    margin-top: 1vh;
+    margin-bottom: 3.5vh;
+    border: none;
+    border-radius: 1vh;
+    width: 100%;
+    color: whitesmoke;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.3vw;
+    padding: 1vh;
+    box-shadow: rgba(204, 18, 18, 0.281) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+}
+
+body .main-login .right-login form{
+    text-align: center;
+}
+
+body .main-login .right-login a{
+    text-decoration: none;
+    color: whitesmoke;
+}
