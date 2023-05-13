@@ -10,8 +10,6 @@ body{
 
 header nav{
     background: rgb(32, 32, 32);
-    /*background: rgb(127,12,34);*/
-    /*background: linear-gradient(0deg, rgba(127,12,34,1) 0%, rgba(134,28,43,1) 35%, rgba(187,23,62,1) 100%);*/
     color: whitesmoke;
     display: flex;
     justify-content: center;
@@ -23,16 +21,27 @@ body .box img{
     width: 6vh;
     height: 6vh;
     float: right;
+    pointer-events: none;
 }
 
 header nav .menu{
     display: flex;
-    font-size: larger;
+    font-size: 2.5vh;
     height: 6vh;
     width: 12vh;
     align-items: center;
     justify-content: center;
-    border-bottom: rgb(32, 32, 32) 3px solid;
+    border-bottom: rgb(32, 32, 32) 0.45vh solid;
+}
+
+header nav .jogos{
+    display: flex;
+    font-size: 2.5vh;
+    height: 6vh;
+    width: 13.2vh;
+    align-items: center;
+    justify-content: center;
+    border-bottom: rgb(32, 32, 32) 0.45vh solid;
 }
 
 header nav .menu a{
@@ -40,10 +49,19 @@ header nav .menu a{
     text-decoration: none;
 }
 
+header nav .jogos a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
 header nav .menu:hover{
     background: rgb(43, 43, 43);
-    /*background: linear-gradient(0deg, rgba(146,14,39,1) 0%, rgba(156,34,51,1) 35%, rgba(209,25,69,1) 100%);*/
-    border-bottom: whitesmoke 3px solid;
+    border-bottom: whitesmoke 0.45vh solid;
+}
+
+header nav .jogos:hover{
+    background: rgb(43, 43, 43);
+    border-bottom: whitesmoke 0.45vh solid;
 }
 
 body .box{
@@ -53,6 +71,7 @@ body .box{
     padding: 0.5vh 2.5vh 0.5vh 2.5vh;
     color: whitesmoke;
     border-radius: 1vh;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 
 body .box p{
@@ -66,8 +85,15 @@ body .box ul li{
 }
 
 body .body2{
+    display: block;
     background-color: rgb(32, 32, 32);
     color: whitesmoke;
     text-align: center;
     width: 100%;
+    height: 40vh;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 10px;
+}
+
+body .body2 p{
+    padding: 8vh 3vh 8vh 3vh;
 }
