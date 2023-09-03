@@ -81,6 +81,7 @@ header nav #ativo{
 header nav div:hover{
     background: rgb(36, 33, 39);
     border-bottom: whitesmoke 0.45vh solid;
+    transition: 0.25s;
 }
 /*FIM MENU*/
 

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../style/telaPerfil.css">
+    <link rel="icon" href="../img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800" rel="stylesheet">
+    <title>Perfil</title>
+</head>
+
+<body>
+
+    <div id="usuario">
+        <img src="../img/perfil.png"/>
+        <p><b>Olá, <span id="username">usuário</span></b></p>
+        <a href="../index.html" id="voltar"><b>&#10226; Voltar</b></a>
+    </div>
+
+    <div class="select-tag">
+        <select>
+            <option value="acao">Ação</option>
+            <option value="aventura">Aventura</option>
+            <option value="fps">FPS</option>
+            <option value="rpg">RPG</option>
+        </select>
+    </div>
+    <button id="add"><b>Adicionar</b></button>
+
+    <table>
+        <tr>
+            <th>Seus marcadores</th>
+        </tr>
+        <tr>
+            <td>Ação</td>
+            <td><button id="deletar"><img src="../img/delete.png"></button></td>
+        </tr>
+        <tr>
+            <td>Aventura</td>
+            <td><button id="deletar"><img src="../img/delete.png"></button></td>
+        </tr>
+        <tr>
+            <td>FPS</td>
+            <td><button id="deletar"><img src="../img/delete.png"></button></td>
+        </tr>
+        <tr>
+            <td>RPG</td>
+            <td><button id="deletar"><img src="../img/delete.png"></button></td>
+        </tr>
+    </table>
+
+    
+        <a href="telaLogin.html" id="exit"><b>Desconectar</b></a>
+
+    <script>
+        function showUsername(){
+            const isLogged = localStorage.getItem("isLogged");
+
+            if(isLogged === "true"){
+                const username = localStorage.getItem("username");
+                document.getElementById("username").textContent = username;
+            }
+        }
+
+        window.addEventListener("load", showUsername);
+    </script>
+</body>
+
+</html>

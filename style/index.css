@@ -2,7 +2,7 @@
 
 /*INICIO MENU*/
 header nav{
-    background: rgb(22, 21, 24);
+    background: rgb(15, 14, 17);
     color: whitesmoke;
     display: flex;
     justify-content: center;
@@ -17,7 +17,8 @@ header nav div{
     font-size: 2.5vh;
     align-items: center;
     justify-content: center;
-    border-bottom: rgb(22, 21, 24) 0.45vh solid;
+    border-bottom: rgb(15, 14, 17) 0.45vh solid;
+    transition: 0.2s;
 }
 
 header nav .menu{
@@ -32,7 +33,7 @@ header nav .jogos{
     width: 13.2vh;
 }
 
-header nav .login{
+header nav .login, #perfil{
     position: absolute;
     left: 90%;
 }
@@ -51,6 +52,11 @@ header nav #ativo{
 header nav div:hover{
     background: rgb(36, 33, 39);
     border-bottom: whitesmoke 0.45vh solid;
+    transition: 0.25s;
+}
+
+.oculto{
+    display: none;
 }
 /*FIM MENU*/
 
@@ -76,7 +82,7 @@ body .box img{
 body .box{
     margin: 5% 20% 5% 20%;
     display: block;
-    background-color: rgba(22, 21, 24, 0.801);
+    background-color: rgba(15, 14, 17, 0.801);
     padding: 0.5vh 2.5vh 0.5vh 2.5vh;
     color: whitesmoke;
     border-radius: 1vh;
@@ -86,7 +92,6 @@ body .box{
 body .box p{
     font-size: 1.3vw;
     overflow: hidden;
-    white-space: break-spaces;
     text-overflow: ellipsis;
     max-width: 94%;
 }
@@ -95,24 +100,90 @@ body .box ul li{
     margin-bottom: 0.5vh;
 }
 
-body .body2{
-    display: block;
-    background-color: rgb(22, 21, 24);;
+body .body-noticias{
+    padding: 2vh 0 2vh 0;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    background-color: rgb(15, 14, 17);
     color: whitesmoke;
     text-align: center;
     width: 100%;
-    height: 40vh;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 10px;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.644) 0px 22px 70px 10px;
 }
 
-body .body2 p{
-    padding: 8vh 3vh 8vh 3vh;
+body .body-noticias div{
+    opacity: 40%;
+    color: white;
+    font-weight: bold;
+    font-size: 200%;
+    width: 20vw;
+    height: 22vh;
+    line-height: 22vh;
+    border-radius: 5px;
+    background-image: url(../img/login.jpg);
+    background-size: cover;
+    transition: 0.3s;
 }
 
+body .body-noticias a{
+    text-decoration: none;
+    margin-right: 1.5vh;
+    margin-left: 1.5vh;
+}
 
+body .body-noticias div:hover{
+    opacity: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+body .body-noticias span{
+    opacity: 0;
+    transition: 0.3s;
+}
+
+body .body-noticias div:hover span{
+    opacity: 100%;
+    transition: 0.3s;
+}
+
+body #moveLeftButton, #moveRightButton{
+    background-color: black;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 100%;
+    border: none;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+body #moveLeftButton{
+    position: absolute;
+    left: 0.5%;
+    transform: translateY(10.7vh);
+    z-index: 1;
+}
+
+body #moveRightButton{
+    position: absolute;
+    right: 0.5%;
+    transform: translateY(10.7vh);
+    z-index: 1;
+}
+
+body #moveLeftButton:hover, #moveRightButton:hover{
+    background-color: rgb(43, 43, 43);
+    transition: 0.2s;
+}
 
 *{
     font-family: 'montserrat', 'trebuchet ms';
+    user-select: none;
 }
 
 ::-webkit-scrollbar{

@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style/index.css">
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="img/logo2.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800" rel="stylesheet">
-    <title>Home</title>
+    <title>PlayPotion</title>
 </head>
 
 <header>
@@ -24,33 +24,101 @@
         <div class="menu">
             <a href="telas/telaSobre.html">Sobre</a>
         </div>
-        <div class="login">
+        <div id="login" class="login">
             <a href="telas/telaLogin.html"><b>Login</b></a>
+        </div>
+        <div id="perfil" class="oculto">
+            <a href="telas/telaPerfil.html"><b>Perfil</b></a>
         </div>
     </nav>
 </header>
 
 <body>
     <div class="box">
-        <h1>Bem-vindo! <img src="img/logo.png"></h1>
+        <h1>Bem-vindo! <img src="img/logo2.png"></h1>
         <p>Neste site você encontrará uma ampla variedade de recursos e ferramentas para ajudá-lo a aproveitar ao máximo sua experiência de jogo.</p>
         <p>Alguns de nossos recursos são:</p>
 
         <ul>
-            <li>aaaaaaaaaaaaaaaaaaa</li>
-            <li>asdfbgasfg</li>
-            <li>ajadgnhadfbs</li>
-            <li>begyuasdfyusfj</li>
-            <li>begyuasdfyusfj</li>
-            <li>begyuasdfyusfj</li>
-            <li>begyuasdfyusfj</li>
+            <li>Pesquisa por jogos</li>
+            <li>Tempo médio de conclusão</li>
+            <li>Quantidade de conquistas nos jogos</li>
+            <li>Avaliações de jogos</li>
+            <li>Datas de lançamento</li>
+            <li>Desenvolvedoras dos jogos</li>
+            <li>Detalhes do jogo em descrições</li>
+            <li>Diversos gêneros de jogos</li>
+            <li>Feed personalizado com recomendações</li>
+            <li>Ficar atualizado com notícias de jogos</li>
         </ul>
 
         <p>Obrigado por visitar nosso site e esperamos que você aproveite todas as informações e recursos que temos a oferecer!</p>
     </div>
+    
+    <button id="moveRightButton">&#10230;</button>
+    <button id="moveLeftButton">&#10229;</button>
 
-    <div class="body2">
-        <p>noticias</p>
+    <div class="body-noticias">
+        <a href="#"><div id="item"><span>&#10132;</span></div></a>
+        <a href="#"><div id="item"><span>&#10132;</span></div></a>
+        <a href="#"><div id="item"><span>&#10132;</span></div></a>
+        <a href="#"><div id="item"><span>&#10132;</span></div></a>
+        <a href="#"><div id="item"><span>&#10132;</span></div></a>
+        <a href="#"><div id="item"><span>&#10132;</span></div></a>
+        <a href="#"><div id="item"><span>&#10132;</span></div></a>
     </div>
+    
+
+    <script>
+        function hideProfileButton(){
+            const isLogged = localStorage.getItem("isLogged");
+
+            if (isLogged === "true"){
+                const elementToShow = document.getElementById("perfil");
+                elementToShow.classList.remove("oculto");
+
+                const elementToHide = document.getElementById("login");
+                elementToHide.classList.add("oculto");
+            }
+        }
+
+        window.addEventListener("load", hideProfileButton);
+    </script>
+
+
+    <script>
+        const bodyNoticias = document.querySelector(".body-noticias");
+        const moveLeftButton = document.getElementById("moveLeftButton");
+        const moveRightButton = document.getElementById("moveRightButton");
+
+        let scrollPosition = 0;
+        const scrollAmount = 600;
+
+        moveLeftButton.addEventListener("click", () => {
+        // Mover as divs para a esquerda
+        scrollPosition -= scrollAmount;
+        if (scrollPosition < 0) {
+            scrollPosition = 0;
+        }
+        bodyNoticias.scrollTo({
+            left: scrollPosition,
+            behavior: "smooth",
+        });
+        });
+
+        moveRightButton.addEventListener("click", () => {
+        // Mover as divs para a direita
+        scrollPosition += scrollAmount;
+        if (scrollPosition > bodyNoticias.scrollWidth - bodyNoticias.clientWidth) {
+            scrollPosition = bodyNoticias.scrollWidth - bodyNoticias.clientWidth;
+        }
+        bodyNoticias.scrollTo({
+            left: scrollPosition,
+            behavior: "smooth",
+        });
+        });
+    </script>
+
+    
 </body>
 </html>
