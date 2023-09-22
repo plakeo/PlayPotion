@@ -98,6 +98,7 @@ body .box p{
 
 body .box ul li{
     margin-bottom: 0.5vh;
+    font-size: 1.1vw;
 }
 
 body .body-noticias{
@@ -152,13 +153,14 @@ body .body-noticias div:hover span{
 body #moveLeftButton, #moveRightButton{
     background-color: black;
     color: whitesmoke;
-    font-size: 20px;
+    font-size: 1vw;
     font-weight: bold;
-    border-radius: 100%;
-    border: none;
-    width: 45px;
-    height: 45px;
+    border-radius: 30%;
+    width: 2.5vw;
+    height: 2.5vw;
     cursor: pointer;
+    transition: 0.2s;
+    border: solid 2px whitesmoke;
     transition: 0.2s;
 }
 
@@ -183,7 +185,6 @@ body #moveLeftButton:hover, #moveRightButton:hover{
 
 *{
     font-family: 'montserrat', 'trebuchet ms';
-    user-select: none;
 }
 
 ::-webkit-scrollbar{
