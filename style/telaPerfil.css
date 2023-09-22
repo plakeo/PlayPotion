@@ -1,6 +1,5 @@
 *{
     font-family: 'montserrat', 'trebuchet ms';
-    user-select: none;
 }
 
 
@@ -24,13 +23,14 @@ body div{
 body img{
     width: 8%;
     pointer-events: none;
+    user-select: none;
 }
 
 body p{
     pointer-events: none;
     margin: auto;
     margin-left: 1vw;
-    font-size: 4vh;
+    font-size: 3.1vh;
 }
 
 body #voltar{

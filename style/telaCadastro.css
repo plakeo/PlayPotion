@@ -13,7 +13,7 @@ body .box-cadastro{
     margin-top: 20vh;
     width: 35vw;
     height: 50vh;
-    background-color: rgb(36, 33, 39);
+    background-color: rgba(15, 14, 17, 0.801);
     padding: 5vh 2vh 3vh 2vh;
     border-radius: 1vh;
     color: whitesmoke;
@@ -29,6 +29,7 @@ body .box-cadastro{
 
 body .box-cadastro label{
     margin-bottom: 0.3vh;
+    margin-left: 1vw;
 }
 
 body .box-cadastro .textfield{
@@ -40,14 +41,23 @@ body .box-cadastro .textfield{
 }
 
 body .box-cadastro input{
-    width: 14vw;
+    display: block;
     outline: none;
-    background-color: rgb(48, 44, 53);
-    border: none;
-    border-radius: 0.5vh;
+    width: 15vw;
+    height: 2vh;
+    background-color: rgb(15, 14, 17);
+    border-radius: 20px;
     padding: 0.8vh 1vh;
     color: rgb(200, 200, 200);
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+body .textfield input{
+    border: 2px solid rgb(15, 14, 17);
+}
+
+body .textfield input:focus{
+    border: 2px solid rgb(140, 140, 140);
 }
 
 body .box-cadastro #enviar{
@@ -56,7 +66,8 @@ body .box-cadastro #enviar{
     margin-bottom: 2vh;
     border: none;
     border-radius: 1vh;
-    width: 82%;
+    width: 100%;
+    height: 4vh;
     color: whitesmoke;
     outline: none;
     text-transform: uppercase;
@@ -76,6 +87,8 @@ body .box-cadastro #ignorarLogin{
     margin-top: 2vh;
     box-shadow: none;
     background: none;
+    border: none;
+    height: 3vh;
 }
 
 body .box-cadastro form{
