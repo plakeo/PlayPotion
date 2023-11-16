@@ -138,7 +138,7 @@ body .body-recomendados div:hover span{
     transition: 0.3s;
 }
 
-body #moveLeftButton1, #moveRightButton1, #moveLeftButton2, #moveRightButton2{
+body #moveLeftButton1, #moveRightButton1, #moveLeftButton2, #moveRightButton2, #moveLeftButton3, #moveRightButton3{
     background-color: black;
     color: whitesmoke;
     font-size: 1vw;
@@ -152,7 +152,7 @@ body #moveLeftButton1, #moveRightButton1, #moveLeftButton2, #moveRightButton2{
     margin-right: 0.3vw;
 }
 
-body #moveLeftButton1:hover, #moveRightButton1:hover, #moveLeftButton2:hover, #moveRightButton2:hover{
+body #moveLeftButton1:hover, #moveRightButton1:hover, #moveLeftButton2:hover, #moveRightButton2:hover, #moveLeftButton3:hover, #moveRightButton3:hover{
     background-color: rgb(43, 43, 43);
     transition: 0.2s;
 }

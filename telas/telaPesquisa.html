@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../style/telaPesquisa.css">
     <link rel="icon" href="../img/logo2.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>PlayPotion</title>
 </head>
 
@@ -30,12 +31,33 @@
     </nav>
 </header>
 
+
+
 <body>
     <div class="box">
-        <input type="search" placeholder="&#10095; Pesquise por um jogo..." id="search">
+        <input type="text" oninput="filtrarJogos()" placeholder="&#10095; Pesquise por um jogo..." id="barraPesquisa">
     </div>
 
-    <div class="body2">
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Análises</th>
+                    <th>Data</th>
+                    <th>Desenvolvedora</th>
+                    <th>Conquistas</th>
+                    <th>Gênero</th>
+                    <th>Preço (USD)</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaJogos">
+
+            </tbody>
+        </table>
+    </div>
+
+    <!--<div class="body2">
         <p id="title">DOOM</p>
         
         <div class="colunas">
@@ -75,6 +97,7 @@
             </div>
         </div>
 
-    </div>
+    </div>-->
+    <script src="../js/searchBar.js"></script>
 </body>
 </html>

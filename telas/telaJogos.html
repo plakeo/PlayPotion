@@ -64,6 +64,21 @@
             <a href="#"><div id="item"><span>&#10132;</span></div></a>
             <a href="#"><div id="item"><span>&#10132;</span></div></a>
         </div>
+
+        <br>
+        <label for="novos">Lançamentos</label>
+        <button id="moveLeftButton3">&#10229;</button>
+        <button id="moveRightButton3">&#10230;</button>
+
+        <div id='novos' class="body-recomendados">
+            <a href="#"><div id="item"><span>&#10132;</span></div></a>
+            <a href="#"><div id="item"><span>&#10132;</span></div></a>
+            <a href="#"><div id="item"><span>&#10132;</span></div></a>
+            <a href="#"><div id="item"><span>&#10132;</span></div></a>
+            <a href="#"><div id="item"><span>&#10132;</span></div></a>
+            <a href="#"><div id="item"><span>&#10132;</span></div></a>
+            <a href="#"><div id="item"><span>&#10132;</span></div></a>
+        </div>
         
     </section>
     
@@ -99,6 +114,8 @@
         document.getElementById("moveRightButton1").addEventListener("click", () => moveRight("recomendados"));
         document.getElementById("moveLeftButton2").addEventListener("click", () => moveLeft("populares"));
         document.getElementById("moveRightButton2").addEventListener("click", () => moveRight("populares"));
+        document.getElementById("moveLeftButton3").addEventListener("click", () => moveLeft("novos"));
+        document.getElementById("moveRightButton3").addEventListener("click", () => moveRight("novos"));
     </script>
 
     
