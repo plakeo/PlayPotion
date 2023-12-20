@@ -20,6 +20,13 @@ body div{
     padding: 7.5vh 10vw;
 }
 
+body div span{
+    font-size: 150%;
+    font-weight: bold;
+    margin-left: 1vw;
+    transform: translateY(35%);
+}
+
 body img{
     width: 8%;
     pointer-events: none;
